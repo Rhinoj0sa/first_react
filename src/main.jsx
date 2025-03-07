@@ -9,5 +9,5 @@ import Snippet from './components/Snippet.jsx'
 const root=createRoot(document.getElementById('root'))
 // const reactElement=createElement("h1", null, "Hello, from create element!")
 
-root.render(<Snippet />)
+root.render(<App />)
 

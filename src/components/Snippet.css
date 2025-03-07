@@ -1,0 +1,73 @@
+.snippets-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.snippet-form {
+  margin-bottom: 20px;
+}
+
+.snippet-title {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.snippet-input,
+.snippet-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px; /* Increase font size for better readability */
+  color: #333; /* Set text color */
+  background-color: #fff; /* Set background color */
+}
+
+.snippet-textarea {
+  height: 150px; /* Set a fixed height for the textarea */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.snippet-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.snippet-button:hover {
+  background-color: #0056b3;
+}
+
+.snippet-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.snippet-item {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9; /* Set background color for snippet items */
+}
+
+.snippet-item h2 {
+  margin-top: 0;
+}
+
+.snippet-item pre {
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 14px; /* Set font size for code snippets */
+  color: #333; /* Set text color for code snippets */
+}

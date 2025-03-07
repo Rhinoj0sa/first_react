@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import './Snippet.css';
 
 interface Snippet {
   id: number;
@@ -48,26 +49,28 @@ const Snippets: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="snippets-container">
       <h1>Snippets</h1>
-      <div>
+      <div className="snippet-form">
         <input
           type="text"
           value={title}
           onChange={e => setTitle(e.target.value)}
           placeholder="Title"
+          className="snippet-input"
         />
         <textarea
           value={code}
           onChange={e => setCode(e.target.value)}
           placeholder="Code"
+          className="snippet-textarea"
         />
-        <button onClick={handleCreateSnippet}>Create Snippet</button>
+        <button onClick={handleCreateSnippet} className="snippet-button">Create Snippet</button>
       </div>
-      <ul>
+      <ul className="snippet-list">
         {snippets.map((snippet) => (
-          <li key={snippet.id}>
-            <h2>{snippet.title}</h2>
+          <li key={snippet.id} className="snippet-item">
+            <h2 className='snippet-title'>{snippet.title}</h2>
             <pre>{snippet.code}</pre>
           </li>
         ))}
@@ -75,5 +78,4 @@ const Snippets: React.FC = () => {
     </div>
   );
 };
-
 export default Snippets;
